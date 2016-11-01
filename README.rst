@@ -1,7 +1,8 @@
 # frequently-used-commands
 
 
-
+.. contents:: Table of Contents
+   :depth: 2
 
 
 
@@ -74,8 +75,17 @@ Procedure for pushing to github
 .. code :: sh
 
     $git fetch upstream
+    $git checkout master
     $git merge upstream/master
     $git push origin master
+    
+    
+    # log on to github, create pull request, and merge pull request
+    # then back to console
+    $git fetch upstream
+    $Git checkout master
+    $Git merge upstream master
+    $Git push
 
 
 
@@ -105,18 +115,22 @@ http://unix.stackexchange.com/questions/70581/scp-and-compress-at-the-same-time-
 
 
 
-# python virtualenv
+python virtualenv
+-----------------
 http://docs.python-guide.org/en/latest/dev/virtualenvs/
 
 
-# creating python package
+creating python package
+-----------------------
+https://github.com/aiquest/python-starter-package
+
+# above uses following refs
 http://python-packaging.readthedocs.io/en/latest/everything.html
 https://gehrcke.de/2014/02/distributing-a-python-command-line-application/
 
 
-
-
-# sphinx docs
+sphinx docs
+~~~~~~~~~~~
 http://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
 
 
@@ -125,31 +139,8 @@ sphinx-apidoc -f -o source/ ../riskscore/
 
 
 
-
-#------------------------------------------------------------------------------------------------------------
-# github push process
-
-
-git fetch upstream
-Git checkout master
-Git merge upstream master
-Git push
-
-
-# log on to github, create pull request, and merge pull request
-# then back to console
-git fetch upstream
-Git checkout master
-Git merge upstream master
-Git push
-
-
-#------------------------------------------------------------------------------------------------------------
-
-
-
-
-# Download entire website
+Download entire website
+-----------------------
 wget -r --no-parent http://site.com/songs/
 
 
