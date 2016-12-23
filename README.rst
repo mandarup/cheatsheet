@@ -6,10 +6,15 @@
 
 
 
-Send active program to background
----------------------------------
+Run program in background, detached from shell
+----------------------------------------------
+
+1. Existing process
+~~~~~~~~~~~~~~~~~~~
+
 .. code :: sh
 
+    
     #suspend
     $control + z  
     
@@ -20,6 +25,12 @@ Send active program to background
     $disown -h [job-spec]    (like %1)
 
 
+2. Start a new processes in background and detached
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+..  code :: sh
+
+    $nohup yourprocess & tail -f nohup.out
 
 
 
