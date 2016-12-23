@@ -12,7 +12,7 @@ Run program in background, detached from shell
 1. Existing process
 ~~~~~~~~~~~~~~~~~~~
 
-.. code :: sh
+.. code:: sh
 
     
     #suspend
@@ -28,7 +28,7 @@ Run program in background, detached from shell
 2. Start a new processes in background and detached
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-..  code :: sh
+.. code:: sh
 
     $nohup yourprocess & tail -f nohup.out
 
@@ -37,7 +37,7 @@ Run program in background, detached from shell
 
 Select Kill Multiple Processes
 ------------------------------
-.. code :: sh
+.. code:: sh
 
     $ps uax | grep  <username-string> 
     
@@ -51,7 +51,7 @@ Git
 
 Git Graph
 ~~~~~~~~~
-.. code :: sh
+.. code:: sh
 
     $git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%an] %Cgreen%d%Creset %s"
 
@@ -147,9 +147,12 @@ sphinx docs
 ~~~~~~~~~~~
 http://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
 
+.. code:: sh
 
-# cd to /project/docs/dir/
-sphinx-apidoc -f -o source/ ../riskscore/
+    $cd /path/to/project/docs/dir/
+    $sphinx-apidoc -f -o source/ ../srcdir/
+
+
 
 
 
