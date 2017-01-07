@@ -88,7 +88,7 @@ Misc Git Commands
 
 Procedure for pushing to github
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. code :: sh
+.. code:: sh
 
     $git fetch upstream
     $git checkout master
