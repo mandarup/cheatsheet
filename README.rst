@@ -88,7 +88,7 @@ Misc Git Commands
 
 Procedure for pushing to github
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. code:: sh
+.. code :: sh
 
     $git fetch upstream
     $git checkout master
@@ -111,7 +111,7 @@ Procedure for pushing to github
 
 Diff two files - side by side
 ----------------------------
-.. code :: sh
+.. code:: sh
 
     $vimdiff file1 file2
 
