@@ -69,7 +69,7 @@ Git Graph
 Misc Git Commands
 ~~~~~~~~~~~~~~~~~
 
-.. code :: sh
+.. code:: sh
 
     #Git merge append message with log of all commits being merge
     $git merge <branch> --log --no-ff
@@ -81,6 +81,8 @@ Misc Git Commands
 
     # Rename folder
     $git mv <old name> <new name>
+    
+    
 
 
 
@@ -97,13 +99,13 @@ Procedure for pushing to github
     # log on to github, create pull request, and merge pull request
     # then back to console
     $git fetch upstream
-    $Git checkout master
-    $Git merge upstream master
-    $Git push
-
-
-
-
+    $git checkout master
+    $git merge upstream master
+    $git push
+    
+    # pushing all tags
+    $git push origin --tags
+    $git push upstream --tags
 
 
 
