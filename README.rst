@@ -88,7 +88,7 @@ Misc Git Commands
 
 Procedure for pushing to github
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. code :: sh
+.. code:: sh
 
     $git fetch upstream
     $git checkout master
@@ -156,11 +156,20 @@ http://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
 
 
 
+GPU
+---
+
+.. code:: sh
+
+    $watch -n 1 nvidia-smi
 
 
 Download entire website
 -----------------------
-wget -r --no-parent http://site.com/songs/
+
+.. code:: sh
+
+    $wget -r --no-parent http://site.com/songs/
 
 
 
