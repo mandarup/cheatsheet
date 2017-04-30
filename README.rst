@@ -173,4 +173,19 @@ Download entire website
 
 
 
+Docker
+------
+
+.. code:: sh
+
+    # get docker container id using
+    $docker ps
+    
+    # use that container id
+    $sudo docker ps <container-id>
+    $sudo docker commit <container_id> 
+    
+    # check the images (optional)
+    $sudo docker images {rhel7 shows the new image ID as the image has been updated}    
+
 
