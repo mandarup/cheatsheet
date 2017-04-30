@@ -1,4 +1,5 @@
-# frequently-used-commands
+Cheatsheet
+----------
 
 
 .. contents:: Table of Contents
