@@ -154,6 +154,16 @@ http://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
 
     $cd /path/to/project/docs/dir/
     $sphinx-apidoc -f -o source/ ../srcdir/
+    
+    
+    # make html
+    $make html
+    
+    #make tex-pdf
+    $make latexpdf
+    
+    #or
+    $make tex
 
 
 
