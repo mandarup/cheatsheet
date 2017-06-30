@@ -1,6 +1,5 @@
-==========
+
 Cheatsheet
-==========
 
 
 .. contents:: Table of Contents
