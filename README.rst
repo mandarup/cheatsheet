@@ -1,9 +1,10 @@
+==========
 Cheatsheet
-##########
+==========
 
 
 .. contents:: Table of Contents
-   :depth: 2
+   :depth: 4
 
 
 Shell
@@ -103,9 +104,6 @@ Misc Git Commands
     $git mv <old name> <new name>
     
     
-
-
-
 Procedure for pushing to github
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code::sh
@@ -126,15 +124,15 @@ Procedure for pushing to github
 
 
 
-
-
 python virtualenv
 =================
+
 http://docs.python-guide.org/en/latest/dev/virtualenvs/
 
 
 creating python package
 =======================
+
 https://github.com/aiquest/python-starter-package
 
 # above uses following refs
@@ -144,6 +142,7 @@ https://gehrcke.de/2014/02/distributing-a-python-command-line-application/
 
 sphinx docs
 ===========
+
 http://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
 
 .. code:: sh
@@ -164,7 +163,7 @@ http://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
 
 
 GPU
----
+===
 
 .. code:: sh
 
@@ -181,7 +180,7 @@ Download entire website
 
 
 Docker
-------
+======
 
 .. code:: sh
 
