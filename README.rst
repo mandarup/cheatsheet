@@ -1,11 +1,13 @@
 Cheatsheet
-----------
+##########
 
 
 .. contents:: Table of Contents
    :depth: 2
 
 
+Shell
+=====
 
 Run program in background, detached from shell
 ----------------------------------------------
@@ -44,11 +46,28 @@ Select Kill Multiple Processes
     
     #Select all process pids 
     $kill -9 <pid1> .. <pidN>
+    
+    
+Diff two files - side by side
+----------------------------
+.. code:: sh
+
+    $vimdiff file1 file2
+
+
+
+copy files local to remote
+---------------------------
+http://unix.stackexchange.com/questions/70581/scp-and-compress-at-the-same-time-no-intermediate-save
+
+.. code :: sh
+
+    $rsync  -z  file/to/copy  username@atlas1:/home/username/path/to/destination
 
 
 
 Git
----
+===
 
 Git Graph
 ~~~~~~~~~
@@ -70,7 +89,7 @@ Git Graph
 Misc Git Commands
 ~~~~~~~~~~~~~~~~~
 
-.. code:: sh
+.. code::sh
 
     #Git merge append message with log of all commits being merge
     $git merge <branch> --log --no-ff
@@ -89,7 +108,7 @@ Misc Git Commands
 
 Procedure for pushing to github
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. code:: sh
+.. code::sh
 
     $git fetch upstream
     $git checkout master
@@ -107,32 +126,15 @@ Procedure for pushing to github
 
 
 
-Diff two files - side by side
-----------------------------
-.. code:: sh
-
-    $vimdiff file1 file2
-
-
-
-
-copy files local to remote
----------------------------
-http://unix.stackexchange.com/questions/70581/scp-and-compress-at-the-same-time-no-intermediate-save
-
-.. code :: sh
-
-    $rsync  -z  file/to/copy  username@atlas1:/home/username/path/to/destination
-
 
 
 python virtualenv
------------------
+=================
 http://docs.python-guide.org/en/latest/dev/virtualenvs/
 
 
 creating python package
------------------------
+=======================
 https://github.com/aiquest/python-starter-package
 
 # above uses following refs
@@ -141,7 +143,7 @@ https://gehrcke.de/2014/02/distributing-a-python-command-line-application/
 
 
 sphinx docs
-~~~~~~~~~~~
+===========
 http://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
 
 .. code:: sh
