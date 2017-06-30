@@ -94,15 +94,12 @@ Procedure for pushing to github
     $git fetch upstream
     $git checkout master
     $git merge upstream/master
+    $git fetch origin
+    $git merge origin/master
     $git push origin master
-    
-    
+
     # log on to github, create pull request, and merge pull request
     # then back to console
-    $git fetch upstream
-    $git checkout master
-    $git merge upstream master
-    $git push
     
     # pushing all tags
     $git push origin --tags
@@ -126,9 +123,6 @@ http://unix.stackexchange.com/questions/70581/scp-and-compress-at-the-same-time-
 .. code :: sh
 
     $rsync  -z  file/to/copy  username@atlas1:/home/username/path/to/destination
-
-
-
 
 
 
