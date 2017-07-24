@@ -3,7 +3,7 @@ Cheatsheet
 
 
 .. contents:: Table of Contents
-   :depth: 4
+   :depth: 2
 
 
 Shell
