@@ -102,6 +102,11 @@ Misc Git Commands
     # Rename folder
     $git mv <old name> <new name>
     
+    # Remove file from entire git history 
+    # Note: this deletes the file from disk
+    $git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch .gmail/gmail_credentials.yml' \ 
+     --prune-empty --tag-name-filter cat -- --all
+    
     
 Procedure for pushing to github
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
