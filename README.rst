@@ -1,7 +1,6 @@
 
 Cheatsheet
 
-
 .. contents:: Table of Contents
    :depth: 2
 
@@ -40,6 +39,7 @@ Run program in background, detached from shell
 
 Select Kill Multiple Processes
 ------------------------------
+
 .. code:: sh
 
     $ps uax | grep  <username-string> 
@@ -47,9 +47,13 @@ Select Kill Multiple Processes
     #Select all process pids 
     $kill -9 <pid1> .. <pidN>
     
+    # kill all process from specific script, e.g. `some_script.py`
+    $ kill -9 `ps aux | grep  some_script.py | grep -v grep | awk '{print $2}'`
+    
     
 Diff two files - side by side
 ----------------------------
+
 .. code:: sh
 
     $vimdiff file1 file2
