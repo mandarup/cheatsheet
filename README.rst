@@ -11,6 +11,13 @@ Shell
 Run program in background, detached from shell
 ----------------------------------------------
 
+File Transfer
+~~~~~~~~~~~~~
+
+.. code:: sh
+   
+   $ scp -r user@your.server.example.com:/path/to/foo /home/user/Desktop/
+
 1. Existing process
 ~~~~~~~~~~~~~~~~~~~
 
