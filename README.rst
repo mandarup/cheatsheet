@@ -16,6 +16,8 @@ File Transfer
 
 .. code:: sh
    
+   # copy from remote to local
+   # -r Recursively copy entire directories
    $ scp -r user@your.server.example.com:/path/to/foo /home/user/Desktop/
 
 1. Existing process
