@@ -109,8 +109,29 @@ http://unix.stackexchange.com/questions/70581/scp-and-compress-at-the-same-time-
     $git push upstream --tags
 ```
 
-## python virtualenv
+# Jupyter Notebook
+## Connect to a remote notebook
 
+1) Local Machine: connect to remote via ssh
+
+   `$ssh user@ip-addresss`
+
+2) Remote Machine: Start the jupyter notebook in the remote server 
+
+   `$jupyter notebook --no-browser --port=8080`
+
+3) Local machine: Setup a SSH tunnel to your remote machine
+
+   `$ssh -N -L 8080:localhost:8080 <remote_user>@<remote_host>`
+
+4) Local Machine: Open browser in local machine, and point to:
+
+   `http://localhost:8080/`
+
+
+# Python
+
+## python virtualenv
 
 http://docs.python-guide.org/en/latest/dev/virtualenvs/
 
@@ -172,3 +193,6 @@ http://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
     # check the images (optional)
     $sudo docker images {rhel7 shows the new image ID as the image has been updated}    
  ```
+ 
+ 
+ 
