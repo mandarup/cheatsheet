@@ -117,8 +117,15 @@ http://unix.stackexchange.com/questions/70581/scp-and-compress-at-the-same-time-
    `$ssh user@ip-addresss`
 
 2) Remote Machine: Start the jupyter notebook in the remote server 
-
-   `$jupyter notebook --no-browser --port=8080`
+```
+   $jupyter notebook --no-browser --port=8080`
+   # and then push to background with
+   $bg
+   $disown %<id>
+   
+   #or to run in background
+   $nohup jupyter notebook --no-browser --port=8080 &
+```
 
 3) Local machine: Setup a SSH tunnel to your remote machine
 
