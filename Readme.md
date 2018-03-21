@@ -134,6 +134,10 @@ http://unix.stackexchange.com/questions/70581/scp-and-compress-at-the-same-time-
 4) Local Machine: Open browser in local machine, and point to:
 
    `http://localhost:8080/`
+   
+## Specific Python Virtualenv
+
+    `(py2env)$ python -m ipykernel install --user --name testenv --display-name "Python2 (py2env)"`
 
 
 # Python
