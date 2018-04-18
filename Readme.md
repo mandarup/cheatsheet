@@ -151,6 +151,20 @@ http://docs.python-guide.org/en/latest/dev/virtualenvs/
 
 https://github.com/aiquest/python-starter-package
 
+## install python without sudo
+```
+   wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
+   tar -xvf Python-3.6.5.tgz 
+   ls
+   cd Python-3.6.5/
+   make clean
+   mkdir /home/<user>/.local
+   ./configure --prefix=/home/<user>/.local
+   make
+   make install
+```
+  
+
 # above uses following refs
 http://python-packaging.readthedocs.io/en/latest/everything.html
 https://gehrcke.de/2014/02/distributing-a-python-command-line-application/
