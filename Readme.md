@@ -158,6 +158,9 @@ https://github.com/aiquest/python-starter-package
     python setup.py sdist && \
     python setup.py bdist_egg && \
     python setup.py bdist_wheel --universal
+    
+    # to install
+    $ pip install dist/*.whl
 
 ## install python without sudo
 ```
