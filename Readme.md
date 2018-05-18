@@ -87,7 +87,7 @@ http://unix.stackexchange.com/questions/70581/scp-and-compress-at-the-same-time-
     $git mv <old name> <new name>
     
     # Remove file from entire git history 
-    # Note: this deletes the file from disk
+    # Note: this deletes the file from disk. to avoid this side effect, first run `git rm -r --cached <your directory>`
     $git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch .gmail/gmail_credentials.yml' \ 
      --prune-empty --tag-name-filter cat -- --all
 ```    
