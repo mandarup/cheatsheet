@@ -151,6 +151,14 @@ http://docs.python-guide.org/en/latest/dev/virtualenvs/
 
 https://github.com/aiquest/python-starter-package
 
+## build python package
+
+   $ cd pakcage_root
+   $ python setup.py build && \
+    python setup.py sdist && \
+    python setup.py bdist_egg && \
+    python setup.py bdist_wheel --universal
+
 ## install python without sudo
 ```
    wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
