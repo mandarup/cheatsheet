@@ -162,6 +162,13 @@ https://github.com/aiquest/python-starter-package
     # to install
     $ pip install dist/*.whl
 
+## housekeeping
+
+    $pip install autopep8 autoflake
+
+    $autopep8 -ia <filename>
+    $autoflake --expand-star-imports --remove-all-unused-imports --remove-unused-variables  -ir src/planopt/data/data_sync.py 
+
 ## install python without sudo
 ```
    wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
