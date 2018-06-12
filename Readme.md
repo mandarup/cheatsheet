@@ -134,6 +134,10 @@ http://unix.stackexchange.com/questions/70581/scp-and-compress-at-the-same-time-
 4) Local Machine: Open browser in local machine, and point to:
 
    `http://localhost:8080/`
+
+5) To stop running kernels on remote
+
+    $jupyter notebook stop <port>
    
 ## Specific Python Virtualenv
 
