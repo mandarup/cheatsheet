@@ -90,6 +90,9 @@ http://unix.stackexchange.com/questions/70581/scp-and-compress-at-the-same-time-
     # Note: this deletes the file from disk. to avoid this side effect, first run `git rm -r --cached <your directory>`
     $git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch .gmail/gmail_credentials.yml' \ 
      --prune-empty --tag-name-filter cat -- --all
+     
+    # Abort merge gone wrong
+    $ git merge --abort
 ```    
     
 ## Procedure for pushing to github
