@@ -57,6 +57,20 @@ http://unix.stackexchange.com/questions/70581/scp-and-compress-at-the-same-time-
     $rsync  -z  file/to/copy  username@atlas1:/home/username/path/to/destination
 ```
 
+## SSHFS
+
+Mount
+```
+   $sshfs -o allow_other,defer_permissions pi@192.168.1.10:/ /Volumes/pi/
+```
+
+Unmount
+
+```
+   $sudo umount -f /Volumes/pi
+```
+
+
 
 # Git
 
