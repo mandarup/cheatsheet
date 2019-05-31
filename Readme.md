@@ -126,6 +126,11 @@ Unmount
     $git push upstream --tags
 ```
 
+# Editor
+## Regex
+  - search and replace blank lines re: `^(?:[\t ]*(?:\r?\n|\r))+` , keep replace field blank
+
+
 # Jupyter Notebook
 ## Connect to a remote notebook
 
