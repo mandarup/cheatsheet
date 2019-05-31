@@ -129,6 +129,7 @@ Unmount
 # Editor
 ## Regex
   - search and replace blank lines re: `^(?:[\t ]*(?:\r?\n|\r))+` , keep replace field blank
+  - select upto but excluding first occurance of a char, e.g. `:` : `^[^:]+`
 
 
 # Jupyter Notebook
