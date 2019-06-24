@@ -3,6 +3,12 @@ Cheatsheet
 
 # Shell
 
+## Images
+```sh
+# images -> single pdf
+$convert path/to/image/glob/*.png path/to/agg-output.pdf
+```
+
 ## File Transfer
 ```
    # copy from remote to local
@@ -125,6 +131,8 @@ Unmount
     $git push origin --tags
     $git push upstream --tags
 ```
+
+
 
 # Editor
 ## Regex
