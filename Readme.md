@@ -92,7 +92,8 @@ Unmount
     $git log --decorate --graph --oneline --all --pretty=format:"<%h> %ad [%an] %Cgreen%d%Creset %s"
     
     #Best
-    git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    $ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    
 ```
 
 ## Misc Git Commands
@@ -112,6 +113,11 @@ Unmount
      --prune-empty --tag-name-filter cat -- --all
      
     # Abort merge gone wrong
+    $ git merge --abort
+    
+    # Merge with dry run 
+    $ git merge --no-commit --no-ff $BRANCH
+    $ git diff --cached
     $ git merge --abort
 ```    
     
