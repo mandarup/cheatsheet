@@ -249,6 +249,16 @@ http://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
     $make tex
 ```
 
+
+# Shell - Random
+```sh
+
+# kill  ssh connection - frozen terminal
+# key-comb : `enter`; `~`; `.`
+
+```
+
+
 # GPU
 
 
