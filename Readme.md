@@ -52,7 +52,7 @@ $convert path/to/image/glob/*.png path/to/agg-output.pdf
 ## Diff two files - side by side
 ```
     $vimdiff file1 file2
- ```
+```
  
  
 ## copy files local to remote
@@ -76,6 +76,12 @@ Unmount
    $sudo umount -f /Volumes/pi
 ```
 
+## Watch
+
+```sh
+    # e.g. to wach number of chromedriver processes running
+    $ watch   "ps -C chromedriver | wc -l"
+```
 
 
 # Git
