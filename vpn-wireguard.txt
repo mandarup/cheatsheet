@@ -1,0 +1,11 @@
+# Setup
+
+
+Option 1 - Docker
+
+
+Option 2 - Normal Installation
+
+
+Additional Resources
+
