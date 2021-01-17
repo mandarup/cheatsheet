@@ -1,0 +1,25 @@
+Installing RaspAP
+Follow steps exactly as described here (tested)
+  https://github.com/billz/raspap-webgui/wiki/RPi-Zero-W-AP-STA-mode
+  Most importantly - DO NOT REBOOT before configuring the hotsopot via web interface
+    I mistakenly/ignorently rebooted and then there is no easy way to fix this, without 
+    starting from fresh raspbian installation.
+    
+  
+
+Current version of RaspAP ships with beta version of ad blocker.
+
+For using AdaGuard refer (not tested)
+  
+  
+Or with PiHole (not tested):  
+
+  https://discourse.pi-hole.net/t/raspap-pihole/14739
+
+  Finally, got it working.
+
+      Install RaspAP
+      Install Pi-Hole
+      sudo touch /var/lib/misc/dnsmasq.leases
+      sudo chown pihole:pihole /var/lib/misc/dnsmasq.leases
+      reboot
