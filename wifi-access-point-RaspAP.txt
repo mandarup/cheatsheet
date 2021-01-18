@@ -5,7 +5,11 @@ Follow steps exactly as described here (tested)
     I mistakenly/ignorently rebooted and then there is no easy way to fix this, without 
     starting from fresh raspbian installation.
     
-  
+- if for some reason virtual uap0 interface disappears, manually run these commands as described in above link
+    $ iw dev wlan0 interface add uap0 type __ap
+    $ ifconfig uap0 up
+    # now this should be visible on
+    $ ifconfig
 
 Current version of RaspAP ships with beta version of ad blocker.
 
