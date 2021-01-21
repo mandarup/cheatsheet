@@ -11,6 +11,27 @@ Follow steps exactly as described here (tested)
     # now this should be visible on
     $ ifconfig
 
+Troubleshooting
+- no internet conection https://www.raspberrypi.org/forums/viewtopic.php?p=1714930
+
+- how to change wireless interface name
+add following line to /etc/udev/rules.d/70-persistent-net.rules
+
+code
+$ sudo nano /etc/udev/rules.d/70-persistent-net.rules
+
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="Your-Mac-Address" , ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="wlan*", NAME="wlan0"
+
+In place of ATTR{address} address write Mac address of wifi adapter.
+Mac address of your wifi adapter can be looked up using 
+$iwconfig
+look for line starting with  "ether" 
+
+Reference: https://forums.linuxmint.com/viewtopic.php?t=303841
+
+
+
+
 Current version of RaspAP ships with beta version of ad blocker.
 
 For using AdaGuard refer (not tested)
