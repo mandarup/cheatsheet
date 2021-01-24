@@ -89,7 +89,7 @@ $sudo service docker restart
 
 # UFW
  If run into issue, start with reset
-
+```
  sudo ufw reset
  sudo ufw default deny incoming
  sudo ufw default deny outgoing
@@ -119,3 +119,4 @@ $sudo tail -f /var/log/ufw*
 # or just see las n
 $sudo tail  /var/log/ufw*
 
+```
