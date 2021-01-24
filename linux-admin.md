@@ -80,6 +80,7 @@ References
 First way: do not expose ports, use --net=host options for containers
 
 Second way: disable this Docker behaviour by creating or modifying /etc/docker/daemon.json
+**NOTE: this creates some issue with iptables - did not work - need to understand iptables better
 ```sh
 $sudo nano /etc/docker/daemon.json
 { "iptables": false }
