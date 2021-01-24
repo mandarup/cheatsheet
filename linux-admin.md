@@ -78,6 +78,10 @@ References
 
 - Solution 
 First way: do not expose ports, use --net=host options for containers
+for docker-compose,as per https://stackoverflow.com/questions/35960452/docker-compose-running-containers-in-nethost
+```yaml
+    network_mode: host
+```
 
 Second way: disable this Docker behaviour by creating or modifying /etc/docker/daemon.json
 **NOTE: this creates some issue with iptables - did not work - need to understand iptables better
